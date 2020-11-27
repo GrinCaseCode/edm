@@ -1503,3 +1503,102 @@ font-size: 18px;
 	max-width: 332px;
 	text-align: left;
 }
+
+
+/*card*/
+.breadcumbs {
+	margin-top: 18px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Avenir Next Cyr Medium';
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #303d49;
+}
+.breadcumbs li span {
+	margin: 0 15px;
+}
+.breadcumbs li a {
+	color: #303d49;
+	border-bottom: 1px solid transparent;
+	transition: all 0.3s;
+}
+.breadcumbs li a:hover {
+	border-color: #303d49;
+}
+.header_page {
+	position: relative;
+}
+.header_page .menu li a {
+	background-color: rgba(148, 188, 227, 0.5);
+}
+.card {
+	padding-bottom: 70px;
+}
+.card .title-section {
+	margin-bottom: 20px;
+}
+.card .price-portfolio { 
+	margin-bottom: 25px;
+}
+.tab-container-card {
+	padding: 33px 35px;
+	font-size: 14px;
+	line-height: 21px;
+	box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+background-color: #ffffff;
+}
+.title-tab {
+font-size: 16px;
+margin-bottom: 10px;
+line-height: 24px;
+font-family: 'Avenir Next Cyr Demi';
+}
+.tab-container-card p {
+	margin-bottom: 25px;
+}
+.col_pr {
+	padding-right: 0;
+}
+.tabs-card {
+	margin: 0 -4px;
+	margin-top: 40px;
+	padding-right: 55px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.tabs-card li {
+	flex: 1;
+	padding: 0 4px;
+}
+.tabs-card  li a {
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 18px 10px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+font-family: 'Avenir Next Cyr Demi';
+text-align: center;
+font-size: 15px;
+	background-color: #8cb7e1;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	transition: all 0.3s;
+}
+.tabs-card  li.active a,
+.tabs-card  li a:hover {
+	background-color: #fff;
+	color: #303d49;
+		box-shadow: 0 -3px 7px rgba(140, 183, 225, 0.2);
+}
+.tab-pane-card {
+	display: none;
+}
+.tab-pane-card:first-child {
+	display: block;
+}

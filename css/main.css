@@ -1,0 +1,1505 @@
+*::-webkit-input-placeholder {
+	color: #495866;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #495866;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #495866;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #495866;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: 'Avenir Next Cyr Regular';
+	font-size: 16px;
+	overflow-x: hidden;
+		color: #303d49;
+		background-color: #fff;
+	margin: 0;
+}
+button {
+	cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+.wrapper {
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+* {
+	outline: none !important;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+ul li {
+	list-style-type: none;
+	outline: none;
+}
+img {
+	outline: none;
+	display: block;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	padding-top: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.header__top {
+	display: flex;
+	align-items: center;
+}
+.logo {
+	display: inline-block;
+}
+.logo img {
+	width: 52px;
+	height: auto;
+}
+.logo-descr {
+	font-size: 14px;
+	max-width: 166px;
+	margin-left: 28px;
+	font-family: 'Avenir Next Cyr Medium';
+}
+.logo-wrap {
+	display: flex;
+	align-items: center;
+}
+.item-header {
+	font-size: 14px;
+line-height: 21px;
+margin: 0 auto;
+	font-family: 'Avenir Next Cyr Medium';
+}
+.phone-main {
+	color: #303d49;
+font-size: 18px;
+line-height: 21px;
+font-family: 'Avenir Next Cyr Demi';
+font-weight: bold;
+display: inline-block;
+transition: all 0.3s;
+}
+.link-simple {
+	color: #303d49;
+font-size: 14px;
+line-height: 17px;
+border-bottom: 1px #303d49 solid;
+	font-family: 'Avenir Next Cyr Medium';
+	display: inline-block;
+	transition: all 0.3s;
+}
+.link-simple:hover {
+	border-color:transparent;
+}
+.contacts-header {
+	text-align: right;
+}
+.list-social {
+	display: flex;
+	align-items: center;
+}
+.list-social li {
+	margin-right: 13px;
+}
+.list-social li:last-child {
+	margin-right: 0;
+}
+.list-social li a {
+	width: 32px;
+height: 32px;
+background-color: #73c82f;
+color: #fff;
+font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+.list-social li a.list-social_viber {
+	background-color: #6c5db8;
+}
+.header .list-social {
+	margin-left: 29px;
+}
+.menu {
+	margin-top: 20px;
+	padding: 0 89px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu li {
+	padding: 0 10px;
+	flex: 1;
+}
+.menu li a {
+	padding: 15px 5px;
+	text-align: center;
+	color: #303d49;
+	border-radius: 8px;
+	font-family: 'Avenir Next Cyr Demi';
+	text-transform: uppercase;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: all 0.3s;
+}
+.menu li a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+/*Style Sandwich*/
+.btn_nav {
+	margin-right: 48px;
+	border: none;
+	z-index: 60;
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	vertical-align: middle;
+	position: relative;
+}
+.btn_nav:hover {
+	opacity: 1;
+}
+.sandwich span {
+	display: block;
+}
+.sandwich {
+	width: 48px;
+	height:32px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 20;
+	cursor: pointer;
+}
+.sw-topper {
+	position: relative;
+	top: 4px;
+	width: 48px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #495866;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	/* transition-delay: 0.2s, 0s; */
+}
+.sw-bottom {
+	position: relative;
+	top: 11px;
+	width: 48px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #495866;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	transition-delay: 0.2s, 0s;
+}
+.sw-footer {
+	position: relative;
+	top: 19px;
+	width: 31px;
+	height: 2px;
+	display: block;
+	background-color: #495866;
+	border: medium none;
+	transition: all 0.5s;
+	transition-delay: 0.1s;
+}
+.sandwich.active .sw-topper {
+	top: 12px;
+	transform: rotate(45deg);
+}
+.sandwich.active .sw-bottom {
+	opacity: 0;
+}
+.sandwich.active .sw-footer {
+	top:8px;
+	width: 48px;
+	transform: rotate(-45deg);
+}
+
+/*End Sandwich*/
+
+.billbord {
+	padding-top: 240px;
+	min-height: 1200px;
+	background-image: url(../img/bg_billbord.jpg);
+	background-size: cover;
+	background-color: #f4f7fc;
+	background-repeat: no-repeat;
+	background-position: left -44px;
+}
+.container_big {
+	max-width: 1760px;
+}
+.billbord .title-section {
+	max-width: 670px;
+}
+.title-section span {
+	display: block;
+font-family: 'Avenir Next Cyr Demi';
+}
+.title-section  strong {
+	color: #303d49;
+	font-family: 'Avenir Next Cyr Heavy';
+}
+.billbord .btn-main {
+	max-width: 310px;
+	margin-top: 0px;
+	text-align: left;
+}
+.billbord__content {
+	display: flex;
+}
+.block-circle {
+	width: 197px;
+height: 197px;
+padding-bottom: 18px;
+color: #495866;
+font-size: 24px;
+margin-top: 105px;
+margin-left: -70px;
+font-family: 'Avenir Next Cyr Demi';
+background-color: #ffffff;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61) 0%, rgba(140, 183, 225, 0.61) 100%);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+z-index: 1;
+position: relative;
+}
+.block-circle__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #ffffff;
+	z-index: -1;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61) 0%, rgba(140, 183, 225, 0.61) 100%);
+}
+.block-circle::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 8px;
+	left: 8px;
+	bottom: 8px;
+	right: 8px;
+	background-image: url(../img/border_circle_before.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	pointer-events: none;
+}
+.block-circle::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 8px;
+	left: 8px;
+	bottom: 8px;
+	right: 8px;
+	z-index: -2;
+	background-image: url(../img/border_circle_after.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	pointer-events: none;
+	animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+.block-circle strong {
+	color: #303d49;
+font-size: 40px;
+margin: 3px 0;
+font-family: 'Avenir Next Cyr Heavy';
+	display: block;
+}
+.block-circle sup {
+	font-size: 14px;
+}
+.item-billbord {
+	min-height: 198px;
+	padding: 30px 50px;
+	box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+border-radius: 8px;
+background-color: #ffffff;
+max-width: 397px;
+margin: 0 auto;
+	padding-bottom: 15px;
+	position: relative;
+}
+.item-billbord__number {
+	margin-bottom: 7px;
+	background-image: linear-gradient(to bottom, rgba(239, 245, 251, 0.61) 0%, rgba(140, 183, 225, 0.61) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+color: #f4f7fc;
+font-size: 30px;
+font-family: 'Avenir Next Cyr Heavy';
+}
+.item-billbord p {
+	line-height: 24px;
+	font-family: 'Avenir Next Cyr Medium';
+}
+.item-billbord::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 8px;
+	bottom: 8px;
+	left: 8px;
+	right: 8px;
+	pointer-events: none;
+	background-image: url(../img/border_item_billbord.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.row_billbord {
+	margin-top: 115px;
+	padding: 0 60px;
+}
+.row_billbord > div:nth-child(2) {
+	margin-top: 85px;
+}
+.row_billbord > div:nth-child(3) {
+	margin-top: 170px;
+}
+
+
+.complectation {
+	padding-bottom: 55px;
+background-color: #f4f7fc;
+}
+.complectation .descr-title {
+	max-width: 600px;
+}
+.billbord + .complectation {
+	margin-top: -60px;
+}
+.item-complectation {
+	max-width: 455px;
+	min-height: 100%;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+border-radius: 8px;
+background-color: #ffffff;
+}
+.item-complectation__image {
+	height: 268px;
+	box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+border-radius: 8px;
+background-color: #ffffff;
+}
+.item-complectation__image img {
+	border-radius: 8px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-complectation__name {
+	border-radius: 8px;
+	margin: 0 15px;
+background-color: #8cb7e1;
+font-size: 21px;
+line-height: 22px;
+    margin-top: -35px;
+    position: relative;
+padding: 25px 10px;
+text-align: center;
+color: #ffffff;
+font-family: 'Avenir Next Cyr Heavy';
+}
+.item-complectation_1 .item-complectation__name {
+	background-color: #73af63;
+}
+.item-complectation_2 .item-complectation__name {
+	background-color: #b95540;
+}
+.item-complectation__title {
+	font-size: 18px;
+	margin: 25px 0;
+	padding: 0 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Avenir Next Cyr Demi';
+}
+.item-complectation__content {
+	line-height:28px;
+	margin: 0 23px;
+	max-height: 315px;
+	overflow: auto;
+	margin-bottom: 25px;
+	position: relative;
+}
+.item-complectation__content:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    height: 72px;
+    /*чтобы тень не перекрывала ссылки*/
+    pointer-events: none;
+    -webkit-transition: opacity 600ms, -webkit-transform 600ms;
+    transition: opacity 600ms, -webkit-transform 600ms;
+    transition: opacity 600ms, transform 600ms;
+    transition: opacity 600ms, transform 600ms, -webkit-transform 600ms;
+    z-index: 2;
+    opacity: 0;
+}
+.item-complectation__content.active:before {
+	opacity: 1;
+}
+.item-complectation__content:active:before,
+.item-complectation__content:focus:before,
+.item-complectation__content:hover:before {
+	opacity: 0 !important;
+}
+
+
+.item-complectation__content strong {
+	font-family: 'Avenir Next Cyr Medium';
+	font-weight: normal;
+}
+.item-complectation__content::-webkit-scrollbar {
+width: 5px;
+border-radius: 3px;
+background-color: #e8ecf3;
+}
+.item-complectation__content::-webkit-scrollbar-thumb {
+border-radius: 3px;
+background-color: #495866;
+background-image: linear-gradient(to bottom, rgba(239, 245, 251, 0.61) 0%, rgba(140, 183, 225, 0.61) 100%);
+}
+.item-complectation__price {
+	color: #495866;
+font-size: 24px;
+	margin-top: auto;
+	font-family: 'Avenir Next Cyr Demi';
+	text-align: center;
+}
+.item-complectation__price strong {
+	color: #303d49;
+font-size: 30px;
+margin: 0 5px;
+font-family: 'Avenir Next Cyr Heavy';
+}
+.item-complectation__price sup {
+	font-size: 14px;
+}
+.row_complectation > div {
+	margin-top: 32px;
+}
+
+
+.portfolio {
+	padding-bottom: 30px;
+}
+.title-section {
+font-size: 36px;
+line-height: 45px;
+font-family: 'Avenir Next Cyr Heavy';
+	color: #495866;
+}
+.title-section_center {
+	padding-top: 40px;
+	text-align: center;
+}
+.tabs {
+	display: flex;
+justify-content: center;
+	align-items: center;
+}
+.tabs li {
+	margin-top: 33px;
+}
+.tabs li a {
+width: 318px;
+height: 85px;
+margin: 0 8px;
+padding: 0 20px;
+text-align: center;
+border-radius: 8px;
+transition: all 0.3s;
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Avenir Next Cyr Demi';
+color: #303d49;
+text-transform: uppercase;
+line-height: 21px;
+box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+border-radius: 8px;
+background-color: #ffffff;
+position: relative;
+}
+.tabs li a::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 9px;
+	left: 9px;
+	right: 9px;
+	bottom: 9px;
+	background-image: url(../img/border_tab.png);
+background-repeat: no-repeat;
+background-position: center;
+transition: all 0.3s;
+pointer-events: none;
+border-radius: 8px;
+border: 1px solid transparent;
+background-size: 100% 100%;
+}
+.tabs li a:hover,
+.tabs li.active a {
+	color: #fff;
+	box-shadow: none;
+	background-color: #8cb7e1;
+}
+.tabs li a:hover::before,
+.tabs li.active a::before {
+	border-color: #fff;
+	background-image: none;
+}
+.tab-container {
+	padding-top: 40px;
+}
+.tab-pane {
+	height: 0;
+	overflow: hidden;
+}
+.tab-pane.active {
+	height: auto;
+}
+.slider-portfolio__item {
+	padding-left: 65px;
+	padding-right: 65px;
+	padding-bottom: 50px;
+}
+.slider-nav__item {
+	height: 142px;
+	margin-bottom: 23px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.slider-for__item img,
+.slider-nav__item img {
+	border-radius: 8px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.slider-for__item {
+	height: 476px;
+	border-radius: 8px;
+}
+.slider-portfolio__name {
+	color: #303d49;
+font-size: 20px;
+padding-bottom: 18px;
+font-family: 'Avenir Next Cyr Demi';
+text-transform: uppercase;
+line-height: 21px;
+}
+.status-portfolio {
+	color: #ffffff;
+	padding: 10px 12px;
+font-size: 14px;
+position: absolute;
+left: 20px;
+top: 20px;
+border-radius: 8px;
+background-color: #f7795d;
+display: inline-flex;
+align-items: center;
+font-family: 'Avenir Next Cyr Demi';
+z-index: 2;
+}
+.status-portfolio i {
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+	color: #bd472f;
+}
+.portfolio-block {
+	padding: 23px 25px;
+	background-color: #f4f7fc;
+}
+.line-char {
+	margin-bottom: 20px;
+	color: #303d49;
+	display: flex;
+}
+.line-char:last-child {
+	margin-bottom: 0;
+}
+.line-char strong {
+	width: 48%;
+font-family: 'Avenir Next Cyr Medium';
+font-weight: normal;
+display: block;
+}
+.line-char span {
+	display: block;
+}
+.price-portfolio {
+font-size: 24px;
+line-height: 45px;
+margin-bottom: 10px;
+font-family: 'Avenir Next Cyr Demi';
+	color: #495866;
+	margin-top: auto;
+}
+.price-portfolio strong {
+	font-size: 30px;
+	line-height: 45px;
+	margin: 0 5px;
+	color: #303d49;
+font-family: 'Avenir Next Cyr Heavy';
+}
+.slider-portfolio__right {
+	padding-bottom: 23px;
+	display: flex;
+	flex-direction: column;
+}
+.btn-main {
+	padding: 23px 32px;
+	color: #ffffff;
+font-size: 16px;
+font-family: 'Avenir Next Cyr Demi';
+line-height: 21px;
+text-align: center;
+display: inline-block;
+box-shadow: 0 15px 35px rgba(173, 78, 59, 0.5);
+background-color: #f87a5c;
+background-image: linear-gradient(to bottom, #f87a5c 0%, #ad4e3b 100%);
+border: none;
+transition: all 0.3s;
+position: relative;
+z-index: 1;
+border-radius: 30px;
+}
+.btn-main::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	border-radius: 30px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #f87a5c;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.btn-main:hover::after {
+	opacity: 1;
+}
+.btn-main_page {
+	box-shadow: 0 15px 35px rgba(111, 164, 214, 0.5);
+background-color: #8cb7e1;
+background-image: linear-gradient(to bottom, #8cb7e1 0%, #5c92c6 100%);
+}
+.btn-main_page::after {
+	background-color: #8cb7e1;
+}
+.btns-portfolio {
+	max-width: 560px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.slick-arrow {
+	width: 48px;
+height: 48px;
+border-radius: 50%;
+top: 50%;
+font-size: 16px;
+color: #000 !important;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #ffffff;
+z-index: 2;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61) 0%, rgba(140, 183, 225, 0.61) 100%);
+}
+.slick-arrow::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	background-color: rgba(140, 183, 225, 0.61);
+	z-index: -1;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.slick-arrow:hover::after {
+	opacity: 1;
+}
+.slick-prev {
+	left: 0;
+}
+.slick-next {
+	right: 0;
+}
+.slick-arrow::before {
+	display: none;
+}
+.slider-portfolio .slick-arrow {
+	top: 47%;
+}
+
+.slick-dots {
+	bottom: 0;
+	left: 0;
+}
+.slick-dots li {
+	width: 10px;
+	height: 10px;
+}
+.slick-dots li button {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	padding: 0;
+	background-color: #8cb7e1;
+	border: none;
+	transition: all 0.3s;
+}
+.slick-dots li.slick-active button,
+.slick-dots li button:hover {
+	background-color: #303d49;
+}
+.get-list {
+	padding: 40px 0;
+	background-image: url(../img/bg_get_list.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.block-form__title {
+line-height: 24px;
+padding-bottom: 20px;
+position: relative;
+z-index: 2;
+font-family: 'Avenir Next Cyr Medium';
+}
+.item-form {
+	margin-bottom: 16px;
+	position: relative;
+}
+.item-form input,
+.item-form textarea {
+	height: 57px;
+	padding-left: 60px;
+	padding-right: 15px;
+box-shadow: inset 1px 2px 5px rgba(44, 52, 56, 0.2);
+border-radius: 6px;
+background-color: #f6f7f7;
+width: 100%;
+color: #303d49;
+border: none;
+font-family: 'Avenir Next Cyr Regular';
+font-size: 14px;
+}
+.item-form__icon {
+	height: 57px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.item-form__icon img {
+    max-width: 22px;
+    max-height: 22px;
+}
+.block-form {
+	padding: 40px 52px;
+	box-shadow: 5px 9px 38px rgba(147, 149, 152, 0.42);
+border-radius: 8px;
+position: relative;
+z-index: 1;
+background-color: #ffffff;
+}
+.checkbox {
+	font-size: 13px;
+	margin-top: 25px;
+	text-align: left;
+	color: #303d49;
+	text-align: left;
+}
+.checkbox label input {
+	position: absolute;
+	z-index: -1;
+	height: 1px !important;
+	width: 1px !important;
+	opacity: 0 !important;
+	margin: 1px 0 0 7px !important;
+}
+.checkbox label span {
+	position: relative;
+	padding: 3px 0 0 23px;
+	display: block;
+	cursor: pointer;
+}
+.checkbox label span:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid rgba(44, 52, 56, 0.7);
+	transition: .2s;
+}
+.checkbox label span:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	content: "\f00c";
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	background-image: none;
+	color: #5466bd;
+	font-size: 7px;
+	opacity: 0;
+	transition: .2s;
+}
+.checkbox label input:checked + span:after {
+	opacity: 1;
+}
+.checkbox-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.checkbox-wrap .checkbox {
+	white-space: nowrap;
+}
+.get-list .block-form {
+	width: 390px;
+	max-width: 100%;
+	float: right;
+	box-shadow: none;
+}
+.get-list .block-form::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	box-shadow: 5px 9px 38px rgba(147, 149, 152, 0.42);
+	background-color: #fff;
+}
+.block-form .btn-main {
+	width: 100%;
+}
+.get-list .title-section {
+	padding-top: 30px;
+	max-width: 645px;
+}
+.get-list .title-section b {
+color: #303d49;
+}
+.get-list .title-section span {
+	display: block;
+	font-family: 'Avenir Next Cyr Demi';
+}
+.block-form__image {
+	left: -672px;
+	top: 166px;
+	position: absolute;
+	pointer-events: none;
+	z-index: -2;
+}
+.get-list_left {
+	position: relative;
+	z-index: 2;
+}
+
+
+.advantages {
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+.advantages .descr-title {
+	max-width: 700px;
+}
+.item-advantage {
+	padding-left: 138px;
+	margin-top: 95px;
+	position: relative;
+}
+.item-advantage__name {
+	font-size: 23px;
+	margin-bottom: 30px;
+	font-family: 'Avenir Next Cyr Demi';
+}
+.item-advantage p {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Avenir Next Cyr Medium';
+}
+.item-advantage__icon {
+	width: 110px;
+height: 110px;
+background-color: #ffffff;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61) 0%, rgba(140, 183, 225, 0.61) 100%);
+border-radius: 50%;
+position: absolute;
+top: -24px;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.item-advantage__icon::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 8px;
+	left: 8px;
+	bottom: 8px;
+	right: 8px;
+	background-image: url(../img/border_avd_before.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	pointer-events: none;
+}
+.item-advantage__icon::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: -11px;
+	left: -11px;
+	bottom: -11px;
+	right: -11px;
+	background-image: url(../img/border_avd_after.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	pointer-events: none;
+}
+.item-advantage__icon img {
+	max-width: 42px;
+	max-width: 42px;
+}
+
+.team {
+	padding-bottom: 10px;
+background-color: #f4f7fc;
+}
+.team .descr-title {
+	max-width: 685px;
+}
+.team .title-section_center {
+	padding-top: 30px;
+}
+.slider-team {
+	margin: 0 -10px;
+}
+.slider-team .slick-prev {
+	left: -50px;
+}
+.slider-team .slick-next {
+	right: -50px;
+}
+.item-team {
+	max-width: 368px;
+	margin: 0 10px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	padding-bottom: 32px;
+	min-height: 483px;
+	text-align: center;
+	box-shadow: 0 7px 13px rgba(140, 183, 225, 0.3);
+border-radius: 8px;
+background-color: #ffffff;
+position: relative;
+font-family: 'Avenir Next Cyr Medium';
+}
+.item-team::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background-image: url(../img/border_team.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	pointer-events: none;
+}
+.item-team__image {
+	height: 340px;
+	position: relative;
+	z-index: 2;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.item-team__image img {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	object-position: top;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-team__name {
+	margin: 18px 0;
+	padding-left: 12px;
+	padding-right: 12px;
+font-family: 'Avenir Next Cyr Demi';
+font-size: 24px;
+}
+.item-team > p {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.steps {
+	padding-bottom: 60px;
+}
+.descr-title {
+	padding-top: 8px;
+	line-height: 24px;
+	font-family: 'Avenir Next Cyr Medium';
+}
+.descr-title_center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.image-steps {
+	margin-bottom: 55px;
+	background-image: url(../img/border_steps.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	    position: relative;
+    display: block;
+    padding-top: 100%;
+}
+.image-steps__content {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-steps img {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.col_lr {
+	padding: 0;
+}
+.col_steps {
+	z-index: 4;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.item-step {
+	max-width: 415px;
+	position: relative;
+}
+.item-step__name {
+	font-size: 20px;
+	margin-bottom: 15px;
+	font-family: 'Avenir Next Cyr Demi';
+}
+.item-step p {
+	line-height: 24px;
+	font-family: 'Avenir Next Cyr Medium';
+}
+.item-step__number {
+	width: 85px;
+height: 85px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(62 124 184) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+color: #9abfe5;
+font-size: 30px;
+font-family: 'Avenir Next Cyr Heavy';
+box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+background-color: #ffffff;
+position: absolute;
+display: flex;
+align-items: center;
+border-radius: 50%;
+justify-content: center;
+text-align: center;
+left: 100%;
+margin-left: 22px;
+}
+.item-step__number::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 6px;
+	left: 6px;
+	bottom: 6px;
+	right: 6px;
+	z-index: -1;
+	background-image: url(../img/border_item_step.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.item-step__number::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: -2;
+}
+.col_steps:last-of-type .item-step__number {
+	right: 100%;
+	left: auto;
+}
+.col_steps:first-of-type {
+	text-align: right;
+	align-items: flex-end;
+}
+.col_steps:first-of-type .item-step {
+	left: 30px;
+}
+.col_steps:first-of-type .item-step:nth-child(2) {
+	left: -50px;
+}
+.col_steps:last-of-type .item-step {
+	right: 30px;
+}
+.col_steps:last-of-type .item-step:nth-child(2) {
+	right: -50px;
+}
+.col_steps:last-of-type .item-step__number {
+	margin: 0;
+	margin-right: 22px;
+}
+.row_steps {
+	margin-top: 50px;
+}
+.col_steps:last-of-type .item-step:last-child {
+	top: -20px;
+}
+.get-sketch {
+	padding: 50px 0;
+	background-image: url(../img/bg_sketch.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.get-sketch .title-section {
+	max-width: 800px;
+	margin-bottom: 40px;
+}
+.block-form_sketch {
+	max-width: 680px;
+}
+.title-form {
+font-size: 20px;
+line-height: 24px;
+padding-bottom: 33px;
+font-family: 'Avenir Next Cyr Demi';
+}
+.get-sketch .checkbox-wrap .checkbox {
+	max-width: 190px;
+	white-space: normal;
+}
+.block-form_sketch .btn-main {
+	margin-top: 8px;
+}
+
+.sertificats {
+	padding-top: 40px;
+	padding-bottom: 75px;
+}
+.sertificats .descr-title {
+	max-width: 705px;
+	margin-bottom: 40px;
+}
+.slider-sertificats {
+	max-width: 438px;
+	padding: 22px;
+	margin: 0 auto;
+	box-shadow: 0 10px 35px rgba(140, 183, 225, 0.3);
+border-radius: 8px;
+background-color: #ffffff;
+}
+.slider-sertificats__item {
+	height: 550px;
+}
+.slider-sertificats__item img {
+	border-radius: 8px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.slider-sertificats .slick-prev {
+	left: -60px;
+}
+.slider-sertificats .slick-next {
+	right: -60px;
+}
+.question {
+	border-radius: 8px;
+	margin-bottom: 15px;
+background-color: #f4f7fc;
+}
+.question__name {
+	color: #495866;
+	font-family: 'Avenir Next Cyr Demi';
+font-size: 18px;
+	padding: 24px 43px;
+	padding-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.question__name i {
+	font-size: 16px;
+	transition: all 0.3s;
+}
+.question__answer {
+	font-size: 14px;
+	padding: 44px;
+	padding-top: 0;
+	line-height: 21px;
+	display: none;
+}
+.question.active .question__name i {
+	transform: rotate(45deg);
+}
+
+.footer {
+	padding-top: 25px;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Avenir Next Cyr Medium';
+	color: #ffffff;
+	background-color: #303d49;
+}
+#map {
+	width: 690px;
+height: 315px;
+margin-top: 11px;
+border-radius: 8px;
+overflow: hidden;
+}
+.item-footer {
+	margin-bottom: 37px;
+}
+.footer .logo-wrap {
+	margin-bottom: 38px;
+}
+.footer-nav li {
+	margin-bottom: 20px;
+}
+.footer-nav li a {
+	color: #fff;
+	transition: all 0.3s;
+	border-bottom: 1px transparent solid;
+	display: inline-block;
+}
+.footer-nav li a:hover {
+	border-color: #fff;
+}
+.phone-footer {
+	color: #ffffff;
+font-family: 'Avenir Next Cyr Demi';
+font-size: 18px;
+	display: inline-block;
+}
+.footer .list-social {
+	margin-top: 10px;
+}
+.footer__bottom {
+	padding: 15px 0;
+	margin-top: 50px;
+	font-size: 13px;
+	border-top: 1px #495866 solid;
+}
+.footer__bottom,
+.footer__bottom a {
+	color: rgba(255, 255, 255, 0.5);
+}
+.create {
+		letter-spacing: 0.33px;
+	display: inline-flex;
+	align-items: center;
+}
+.create img {
+	max-width: 60px;
+	margin-left: 15px;
+}
+.btn_top {
+	font-size: 24px;
+	position: relative;
+	color: #303d49 !important;
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #fff;
+	z-index: 300;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn_top:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.align_right {
+	text-align: right;
+}
+.col_copyright {
+	padding-left: 65px;
+}
+.button-center {
+	padding-top: 40px;
+	text-align: center;
+}
+.button-center .btn-main {
+	max-width: 332px;
+	text-align: left;
+}

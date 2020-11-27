@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#495866;}
+</style>
+<g>
+	<path class="st0" d="M0,452h181v30h-60v30h270v-30h-60v-30h181V0H0V452z M301,482h-90v-30h90V482z M30,422v-90h452v90H30z M482,30
+		v272H30V30H482z"/>
+	<path class="st0" d="M301,237.8V94.2l-105-35l-105,35v143.6l105,35L301,237.8z M211,236.2v-90.4l60-20v90.4L211,236.2z M238.6,105
+		L196,119.2L153.4,105L196,90.8L238.6,105z M121,125.8l60,20v90.4l-60-20V125.8z"/>
+	<rect x="211" y="362" class="st0" width="90" height="30"/>
+	<rect x="331" y="362" class="st0" width="30" height="30"/>
+	<rect x="151" y="362" class="st0" width="30" height="30"/>
+	<polygon class="st0" points="421,242 391,242 391,90 421,90 421,60 331,60 331,90 361,90 361,242 331,242 331,272 421,272 	"/>
+</g>
+</svg>

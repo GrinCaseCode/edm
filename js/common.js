@@ -75,6 +75,7 @@ $(window).scroll(function(){
 			settings: {
 				vertical: false,
 				verticalSwiping: false,
+				swipe: false,
 			}
 		}]
 	});

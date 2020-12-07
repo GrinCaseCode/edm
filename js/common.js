@@ -188,7 +188,7 @@ $(".input-phone").mask("+7 (999) 999-99-99");
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
-		$(".tab-pane-inner").fadeOut(0);
+		$(this).parent().parent().siblings(".tab-container-inner").find(".tab-pane-inner").fadeOut(0);
 		var selectTab3 = $(this).attr("href");
 		$(selectTab3).fadeIn(200);
 

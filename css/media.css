@@ -197,6 +197,37 @@
 .slider-sertificats .slick-next {
     right: -30px;
 }
+
+/*new pages*/
+/*new pages*/
+/*new pages*/
+.billbord_page .title-section {
+    max-width: 670px;
+}
+.billbord_page .btn-main {
+    margin-top: 30px;
+}
+.get-sketch_page {
+    padding: 50px 0;
+}
+.links-social li {
+    margin: 0 13px;
+    margin-top: 30px;
+}
+.slider-review .slick-prev {
+    left: -70px;
+}
+.slider-review .slick-next {
+    right: -70px;
+}
+.tabs-etap li a {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tabs-inner li a {
+    font-size: 16px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -366,6 +397,42 @@
 }
 .catalog .tabs li a {
 	font-size: 14px;
+}
+
+/*new pages*/
+/*new pages*/
+/*new pages*/
+.billbord_page .block-circle {
+    margin-top: -30px;
+}
+.bottom-billbord .row  {
+    justify-content: center;
+}
+.bottom-billbord .row > div {
+    margin-top: 30px;
+}
+.bottom-billbord {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.slider-review {
+    max-width: 617px;
+    }
+    .slider-review__item {
+    height: 378px;
+}
+.tabs-etap {
+    margin: 0 -5px;
+    display: flex;
+}
+.tabs-etap li {
+    flex: 1;
+    padding: 0 5px;
+}
+.tabs-inner li a {
+    font-size: 14px;
+    height: 55px;
+    padding: 0 30px;
 }
 }
 
@@ -591,6 +658,48 @@
 .pagination li:not(.pagination__arrow) {
     font-size: 17px;
     }
+
+    /*new pages*/
+/*new pages*/
+/*new pages*/
+.billbord_page .block-circle {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.billbord_repair {
+    padding-bottom: 40px;
+}
+.slider-review__item {
+    height: auto;
+}
+.slider-review {
+    padding-bottom: 40px;
+}
+.etaps {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.tab-container-inner {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.tabs-inner li a {
+    font-size: 13px;
+    height: 53px;
+    padding: 0 22px;
+}
+.tabs-etap li {
+    margin-bottom: 20px;
+    flex: none;
+    width: 50%;
+}
+.tabs-etap {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.advantages_page + .team .title-section_center {
+    padding-top: 10px;
+}
 }
 
 @media (max-width: 576px) {
@@ -861,6 +970,60 @@
 .pagination li:not(.pagination__arrow) a {
 	margin: 0 10px;
 }
+
+    /*new pages*/
+/*new pages*/
+/*new pages*/
+.bottom-billbord {
+    padding-bottom: 10px;
+}
+.links-social li a {
+    font-size: 14px;
+}
+.links-social li {
+    margin-top: 20px;
+}
+.slider-review {
+    padding-bottom: 30px;
+}
+.reviews {
+    padding-bottom: 30px;
+}
+.bottom-billbord .row > div {
+    margin-top: 15px;
+}
+.tabs-etap li {
+    width: 100%;
+    padding: 0;
+}
+.tabs-etap {
+    margin: 0 -2px;
+}
+.tabs-inner li {
+    width: 33%;
+    margin: 0;
+    padding: 0 2px;
+}
+.tabs-inner li a {
+    font-size: 11px;
+    height: 43px;
+    padding: 0 3px;
+    text-align: left;
+}
+.tab-container-inner {
+    padding: 20px 15px;
+}
+.item-etap__number {
+    font-size: 25px;
+    line-height: 40px;
+    }
+    .item-etap p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .item-etap {
+        margin-bottom: 15px;
+    }
 }
 
 

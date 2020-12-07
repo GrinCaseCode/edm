@@ -139,6 +139,27 @@ $(window).scroll(function(){
 		]
 	});
 
+	$('.slider-review').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+					slidesToShow:1,
+					adaptiveHeight: true,
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
+	});
+
 
 	// mask-input 
 $(".input-phone").mask("+7 (999) 999-99-99");
@@ -151,7 +172,6 @@ $(".input-phone").mask("+7 (999) 999-99-99");
 		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").removeClass("active");
 		var selectTab = $(this).attr("href");
 		$(selectTab).addClass("active");
-
 	});
 
 	$('.tabs-card li a').click(function(event) {
@@ -161,6 +181,26 @@ $(".input-phone").mask("+7 (999) 999-99-99");
 		$(this).parent().parent().siblings(".tab-container-card").find(".tab-pane-card").fadeOut(0);
 		var selectTab2 = $(this).attr("href");
 		$(selectTab2).fadeIn(200);
+
+	});
+
+	$('.tabs-inner li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-inner").fadeOut(0);
+		var selectTab3 = $(this).attr("href");
+		$(selectTab3).fadeIn(200);
+
+	});
+
+	$('.tabs-etap li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-etap").fadeOut(0);
+		var selectTab4 = $(this).attr("href");
+		$(selectTab4).fadeIn(200);
 
 	});
 
@@ -204,6 +244,18 @@ $(".question__name").click(function(e) {
 				if(dest2 !== undefined && dest2 !== '') { 
 					$('html').animate({ 
 						scrollTop: $(dest2).offset().top
+        }, 500 // скорость прокрутки
+        );
+				}
+				return false;
+			});
+
+			$('.tabs-etap a').on( 'click', function(){ 
+				var el3 = $(this);
+				var dest3 = el3.attr('href'); 
+				if(dest3 !== undefined && dest3 !== '') { 
+					$('html').animate({ 
+						scrollTop: $(dest3).offset().top
         }, 500 // скорость прокрутки
         );
 				}

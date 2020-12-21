@@ -18,16 +18,19 @@ $(window).scroll(function(){
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".menu2").is(":hidden")) {
-			$(".menu2").slideDown(600);
+		if ($(".menu-main").is(":hidden")) {
+			$(".menu-main").fadeIn(300);
+			$("body").addClass("body_menu");
 		} else {
-			$(".menu2").slideUp(600);
+			$(".menu-main").fadeOut(300);
+			$("body").removeClass("body_menu");
 		}
 		
 	});
 
-	$(".menu2 a").click(function() {
-		$(".menu2").slideUp(600);
+	$(".menu-main a").click(function() {
+		$(".menu-main").fadeOut(300);
+		$("body").removeClass("body_menu");
 		$(".sandwich").removeClass("active");
 	});
 

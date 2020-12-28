@@ -262,7 +262,7 @@
     padding: 30px 0;
     padding-left: 70px;
 }
-.billbord:not(.billbord_page).title-section {
+.billbord:not(.billbord_page) .title-section {
     max-width: 635px;
 }
 .billbord:not(.billbord_page) {
@@ -496,6 +496,14 @@
 .row_billbord > div {
     margin-bottom: 30px !important;
 }
+
+.billbord:not(.billbord_page) {
+  background-size: cover;
+}
+.billbord:not(.billbord_page) .title-section::before {
+    top: -473px;
+    left: -597px;
+    }
 }
 
 /* Small Devices, Tablets */

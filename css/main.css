@@ -2135,6 +2135,21 @@ line-height: 45px;
 }
 .billbord:not(.billbord_page) .title-section {
     max-width: 760px;
+    position: relative;
+    z-index: 1;
+}
+.billbord:not(.billbord_page) .title-section::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 1682px;
+	height: 1250px;
+    top: -527px;
+    left: -465px;
+	background-image: url(../img/cloud2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	z-index: -1;
 }
 .block-circle {
 	margin-top: 0;
@@ -2142,8 +2157,9 @@ line-height: 45px;
 }
 .billbord:not(.billbord_page) {
     min-height: 1012px;
-	background-image: url(../img/bg_billbord2.jpg);
+	background-image: url(../img/billbord2_1.jpg);
 	background-position: center top;
+	background-size: 101%;
 }
 .row_billbord > div:nth-child(3),
 .row_billbord > div:nth-child(2) {

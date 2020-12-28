@@ -497,9 +497,7 @@
     margin-bottom: 30px !important;
 }
 
-.billbord:not(.billbord_page) {
-  background-size: cover;
-}
+
 .billbord:not(.billbord_page) .title-section::before {
     top: -473px;
     left: -597px;
@@ -809,8 +807,11 @@
     margin-bottom: 0 !important;
 }
 .billbord:not(.billbord_page) .title-section::before {
-    top: -528px;
-    }
+    top: -488px;
+}
+.billbord:not(.billbord_page) {
+  background-size: cover;
+}
 }
 
 @media (max-width: 576px) {

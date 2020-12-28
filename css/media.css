@@ -808,6 +808,9 @@
 .row_billbord > div {
     margin-bottom: 0 !important;
 }
+.billbord:not(.billbord_page) .title-section::before {
+    top: -528px;
+    }
 }
 
 @media (max-width: 576px) {
